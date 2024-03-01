@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Transporterloginactivity">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:id="@+id/transloginwal"
+        android:src="@drawable/signinwalpaper"></ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transporter Login"
+        android:textSize="20sp"
+        android:textColor="#FFCC80"
+        android:id="@+id/transloginstatus"
+        android:layout_below="@+id/transloginwal"
+        android:layout_centerHorizontal="true"></TextView>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/transloginwal"
+        android:hint="Email"
+        android:textColorHint="#A39595"
+        android:layout_marginTop="20dp"
+        android:id="@+id/transloginemail"
+        android:backgroundTint="#FDD835"
+        android:inputType="textEmailAddress"
+        android:textColor="#FFCC80"></EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/transloginemail"
+        android:textColorHint="#A39595"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:backgroundTint="#FDD835"
+        android:layout_marginTop="10dp"
+        android:id="@+id/transloginpassword"
+        android:textColor="#FDD835"></EditText>
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/black"
+    android:text="Login"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="10dp"
+    android:backgroundTint="@color/white"
+    android:layout_below="@id/transloginpassword"
+    android:id="@+id/transloginlogin"></Button>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Do not have account"
+    android:textColor="@color/colorAccent"
+    android:layout_below="@id/transloginlogin"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/transloginnotaccount"></TextView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/transloginnotaccount"
+        android:backgroundTint="#FFA726"
+        android:text="Register"
+        android:id="@+id/transloginregister"></Button>
+
+</RelativeLayout>

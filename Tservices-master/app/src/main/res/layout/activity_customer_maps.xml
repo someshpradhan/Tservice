@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CustomerMapsActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+        <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tel1"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:visibility="gone"
+        android:layout_above="@+id/customermaprequestride">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image_customermap"
+        android:layout_below="@+id/appbarsettings"
+        android:layout_centerHorizontal="true"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/profile"
+        app:civ_border_width="2dp"
+         android:layout_alignParentLeft="true"
+         android:layout_marginStart="15dp"
+            android:padding="3dp"
+        app:civ_border_color="@color/colorPrimaryDark"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name_transporter"
+            android:layout_toRightOf="@+id/profile_image_customermap"
+            android:text="Transporter name"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+              android:layout_marginTop="16dp"
+            ></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/phone_transporter"
+            android:layout_toRightOf="@+id/profile_image_customermap"
+            android:text="Transporter phone no"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="3dp"
+            android:textSize="14sp"
+            android:layout_below="@+id/name_transporter"
+            ></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/vehicle_transporter"
+            android:layout_toRightOf="@+id/profile_image_customermap"
+            android:text="Vehicle"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="3dp"
+            android:textSize="14sp"
+            android:layout_below="@+id/phone_transporter"
+            ></TextView>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/phone"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:id="@+id/callbtn"
+            app:tint="@android:color/white"
+            ></ImageView>
+
+
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="logout"
+        android:id="@+id/customermaplogout"
+        android:backgroundTint="@color/colorPrimaryDark">
+
+    </Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="setting"
+        android:layout_alignParentEnd="true"
+
+        android:id="@+id/customermapsettings"
+        android:backgroundTint="@color/teal_200">
+
+
+    </Button>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel booking"
+        android:visibility="gone"
+android:layout_below="@+id/customermaplogout"
+        android:id="@+id/customermapcancel"
+        android:backgroundTint="@color/colorPrimaryDark"/>
+
+  <SearchView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/customermapcancel"
+      android:queryHint="Destination...."
+      android:id="@+id/sv_location"
+      android:iconifiedByDefault="false"
+      android:elevation="5dp"
+      android:layout_margin="10dp"
+      android:background="@drawable/bg_round"
+      android:visibility="gone"
+      ></SearchView>
+
+
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:text="Request"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/customermaprequestride"
+        android:background="@drawable/download">
+
+    </Button>
+
+
+</RelativeLayout>
+
+
+

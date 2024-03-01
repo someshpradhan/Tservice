@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".WelcomeActivity">
+
+<ImageView
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    android:id="@+id/welcomeicon"
+    android:layout_centerHorizontal="true"
+    android:src="@drawable/download"></ImageView>
+
+    <Button
+        android:id="@+id/welcometransporter"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcomeicon"
+        android:layout_centerHorizontal="true"
+        android:background="#F9A825"
+        android:text="Transporter"
+        app:backgroundTint="#F9A825"></Button>
+    <Button
+        android:layout_width="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:text="Customer"
+        android:layout_marginTop="10dp"
+        android:background="#039BE5"
+        android:id="@+id/welcomecustomer"
+        app:backgroundTint="#039BE5"
+        android:layout_below="@+id/welcometransporter"></Button>
+
+
+
+
+
+</RelativeLayout>
